@@ -6,6 +6,7 @@ import Route from './route';
 import SingIn from '../pages/SignIn';
 import SingUp from '../pages/SignUp';
 import ForgotPassword from '../pages/ForgotPassword';
+import ResetPassword from '../pages/ResetPassword';
 
 import Dashboard from '../pages/Dashboard';
 
@@ -14,6 +15,7 @@ const Routes: React.FC = () => (
     <Route path="/" component={SingIn} exact />
     <Route path="/singup" component={SingUp} exact />
     <Route path="/forgot-password" component={ForgotPassword} />
+    <Route path="/reset-password" component={ResetPassword} />
     <Route path="/dashboard" component={Dashboard} isPrivate />
   </Switch>
 );
